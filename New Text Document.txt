@@ -1,0 +1,18 @@
+W9U2sd2r0hbK1gQG
+apnacollegework
+
+mongodb+srv://apnacollegework:W9U2sd2r0hbK1gQG@cluster0.mipfq2y.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
+GET http://localhost:3000/tokens
+
+POST http://localhost:3000/store-token
+{
+  "token": "abc123",
+  "appId": "app001"
+}
+
+POST http://localhost:3000/store-app
+
+{
+  "appId": "app001",
+  "appName": "MyApp"
+}
