@@ -85,8 +85,11 @@ app.post("/store-token", (req, res) => storeToken(req, res));
 app.post("/store-app", (req, res) => storeAppData(req, res));
 app.get("/tokens", (req, res) => getAllTokens(req, res));
 app.get("/apps", (req, res) => getAllApps(req, res));
-
+app.get("/", (req, res) => {
+  res.send("Hello World");
+});
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
 });
+
